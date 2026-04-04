@@ -1,11 +1,27 @@
+import { Route, Routes } from "react-router-dom";
+import { NavBar } from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Category from "./pages/Category";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <div className="bg-white h-screen">App</div>
-  )
-}
+    <main>
+      <NavBar />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category" element={<Category />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </main>
+  );
+};
 
-export default App
+export default App;
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
