@@ -4,22 +4,22 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Category from "./pages/Category";
 import Contact from "./pages/Contact";
-import axios from "axios";
-import { useEffect, useState } from "react";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
 
-export const api_uri = import.meta.env.VITE_API_URL
+
 
 const App = () => {
-  const [data, setData] = useState([])
-  const handleApi = async () => {
-    const response = await axios.get(api_uri)
-    setData(response.data.articles)
-  }
-  // console.log(data)
+  // const [data, setData] = useState([])
+  // const handleApi = async () => {
+  //   const response = await axios.get(api_uri)
+  //   setData(response.data.articles)
+  // }
+  // // console.log(data)
 
-  useEffect(() => {
-    handleApi()
-  },[])
+  // useEffect(() => {
+  //   handleApi()
+  // },[])
 
   return (
     <main>

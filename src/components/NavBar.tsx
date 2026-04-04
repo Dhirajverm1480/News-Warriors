@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <header>
-      <nav className="w-full py-2 px-1 flex justify-between items-center border-b">
+    <header className="sticky top-0 bg-white">
+      <nav className="w-full py-2 px-1 flex justify-between items-center border-b px-10">
         <ul className="flex items-center gap-4">
           <NavLink to="/">
             <p className="text-md font-medium hover:text-orange-300 hover:animate-pulse">
