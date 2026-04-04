@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Card } from "../components/Card";
 import { NewsContext } from "../context/NewsContext";
+import { Banner } from "../components/Banner";
 
 const Home = () => {
   const { articles } = useContext(NewsContext);
@@ -8,6 +9,7 @@ const Home = () => {
   console.log("Art: ", articles);
   return (
     <section>
+      <Banner />
       <div className="w-full px-10 pb-10 grid md:grid-cols-3 lg:grid-cols-4">
         {articles.map((item, index) => (
           <Card
